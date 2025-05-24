@@ -3,16 +3,6 @@
 This repository contains a project focused on **recoloring images for individuals with Color Vision Deficiency (CVD)**, commonly known as color blindness. The aim is to enhance the visual experience by adjusting image colors to be more distinguishable for those with various forms of CVD.
 
 ---
-
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [License](#license)
-
 ---
 
 ## Features
@@ -25,22 +15,7 @@ This repository contains a project focused on **recoloring images for individual
 
 ---
 
-## Technologies Used
 
-**Frontend:**
-- **TypeScript:** Robust and scalable client-side logic.
-- **JavaScript:** Core web scripting language.
-- **HTML:** Web application structure.
-- **Vite:** Fast build tool for modern web projects (`vite.config.ts`).
-- **ESLint:** Code quality and linting (`eslint.config.js`).
-
-**Backend/Processing:**
-- **Python:** Image processing and recolorization algorithms (`testing.py`, `xanax.py`).
-
-**Package Management:**
-- **npm** or **yarn** (indicated by `package.json` and `package-lock.json`).
-
----
 
 ## Installation
 
@@ -104,32 +79,3 @@ Refer to the comments or documentation within these Python files for specific us
 
 ---
 
-## Project Structure
-
-CVD-Image-Recolorization/
-├── index.html
-├── src/                  # TypeScript/JavaScript source code
-├── testing.py            # Python script for image processing/testing
-├── xanax.py              # Python script for core image manipulation
-├── output.jpg            # Example output image
-├── redYellow.jpg         # Sample input image
-├── .env                  # Environment variables configuration
-├── .gitignore
-├── LICENSE
-├── package.json
-├── package-lock.json
-├── tsconfig.json
-├── tsconfig.app.json
-├── tsconfig.node.json
-├── vite.config.ts
-├── eslint.config.js
-└── ... (other files)
-
-
----
-
-## License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
----
