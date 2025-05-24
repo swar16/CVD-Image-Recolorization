@@ -3,7 +3,6 @@
 This repository contains a project focused on **recoloring images for individuals with Color Vision Deficiency (CVD)**, commonly known as color blindness. The aim is to enhance the visual experience by adjusting image colors to be more distinguishable for those with various forms of CVD.
 
 ---
----
 
 ## Features
 
