@@ -17,55 +17,60 @@ This repository contains a project focused on **recoloring images for individual
 
 ## Features
 
-Based on the repository's files, this project likely offers the following features:
-
-* **Image Recolorization:** Algorithms and methods to transform image colors to improve visibility for CVD individuals.
-* **Color Vision Deficiency Simulation:** Potentially includes tools to simulate different types of color blindness for testing and validation.
-* **Web Interface:** An `index.html` and associated TypeScript/JavaScript files suggest a web-based application for users to upload and recolor images.
-* **Backend Processing:** Python scripts (`testing.py`, `xanax.py`) might handle the core image processing and recolorization logic.
-* **Configuration Management:** `.env` file indicates environment variable handling for sensitive information or configuration.
+- **Image Recolorization:** Algorithms and methods to transform image colors to improve visibility for CVD individuals.
+- **Color Vision Deficiency Simulation:** Tools to simulate different types of color blindness for testing and validation.
+- **Web Interface:** An `index.html` and associated TypeScript/JavaScript files provide a web-based application for users to upload and recolor images.
+- **Backend Processing:** Python scripts (`testing.py`, `xanax.py`) handle the core image processing and recolorization logic.
+- **Configuration Management:** `.env` file for environment variable handling and configuration.
 
 ---
 
 ## Technologies Used
 
-This project utilizes a combination of frontend and backend technologies:
+**Frontend:**
+- **TypeScript:** Robust and scalable client-side logic.
+- **JavaScript:** Core web scripting language.
+- **HTML:** Web application structure.
+- **Vite:** Fast build tool for modern web projects (`vite.config.ts`).
+- **ESLint:** Code quality and linting (`eslint.config.js`).
 
-* **Frontend:**
-    * **TypeScript:** For robust and scalable client-side logic.
-    * **JavaScript:** Core web scripting language.
-    * **HTML:** For the web application structure.
-    * **Vite:** A fast build tool for modern web projects (`vite.config.ts`).
-    * **ESLint:** For code quality and linting (`eslint.config.js`).
-* **Backend/Processing:**
-    * **Python:** For image processing and potentially the core recolorization algorithms (`testing.py`, `xanax.py`).
-* **Package Management:**
-    * `npm` or `yarn` (indicated by `package.json` and `package-lock.json`).
+**Backend/Processing:**
+- **Python:** Image processing and recolorization algorithms (`testing.py`, `xanax.py`).
+
+**Package Management:**
+- **npm** or **yarn** (indicated by `package.json` and `package-lock.json`).
 
 ---
 
 ## Installation
 
-To set up and run this project locally, follow these steps:
-
-1.  **Clone the repository:**
+1. **Clone the repository:**
     ```bash
-    git clone [https://github.com/swar16/CVD-Image-Recolorization.git](https://github.com/swar16/CVD-Image-Recolorization.git)
+    git clone https://github.com/swar16/CVD-Image-Recolorization.git
     cd CVD-Image-Recolorization
     ```
 
-2.  **Install Frontend Dependencies:**
+2. **Install Frontend Dependencies:**
     ```bash
-    npm install # or yarn install
+    npm install
+    # or
+    yarn install
     ```
 
-3.  **Install Python Dependencies:**
-    *(You might need to create a virtual environment first)*
+3. **Install Python Dependencies:**
+    *(You might want to use a virtual environment)*
     ```bash
     python -m venv venv
-    source venv/bin/activate # On Windows: `venv\Scripts\activate`
-    pip install -r requirements.txt # Assuming a requirements.txt will be added, or install manually:
-    # pip install opencv-python numpy # (Common libraries for image processing in Python)
+    # On Windows:
+    venv\Scripts\activate
+    # On macOS/Linux:
+    source venv/bin/activate
+
+    # If requirements.txt exists:
+    pip install -r requirements.txt
+
+    # Or install manually, e.g.:
+    pip install opencv-python numpy
     ```
 
 ---
@@ -74,47 +79,57 @@ To set up and run this project locally, follow these steps:
 
 ### Running the Web Application
 
-1.  **Start the development server:**
+1. **Start the development server:**
     ```bash
-    npm run dev # or yarn dev
+    npm run dev
+    # or
+    yarn dev
     ```
     This will typically open the web application in your browser at a local address (e.g., `http://localhost:3000`).
 
-2.  **Upload and Recolor Images:** Use the web interface to upload an image. The application should then process and display the recolored version.
+2. **Upload and Recolor Images:**  
+   Use the web interface to upload an image. The application will process and display the recolored version.
 
-### Running Python Scripts (if applicable)
+### Running Python Scripts
 
-Individual Python scripts like `testing.py` or `xanax.py` might be runnable directly for specific processing tasks or testing:
+You can run the Python scripts directly for image processing tasks:
 
 ```bash
 python testing.py
 # or
 python xanax.py
+```
 
-(Refer to the comments or internal documentation within these Python files for specific usage and arguments.)
+Refer to the comments or documentation within these Python files for specific usage and arguments.
 
 ---
 
 ## Project Structure
 
-The key files and directories in this repository are:
+CVD-Image-Recolorization/
+├── index.html
+├── src/                  # TypeScript/JavaScript source code
+├── testing.py            # Python script for image processing/testing
+├── xanax.py              # Python script for core image manipulation
+├── output.jpg            # Example output image
+├── redYellow.jpg         # Sample input image
+├── .env                  # Environment variables configuration
+├── .gitignore
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+├── eslint.config.js
+└── ... (other files)
 
-* `index.html`: The main entry point for the web application.
-* `src/`: Contains the TypeScript/JavaScript source code for the frontend.
-* `testing.py`: A Python script, likely for testing image processing or recolorization logic.
-* `xanax.py`: Another Python script, possibly containing core image manipulation or algorithm implementations.
-* `output.jpg`: An example output image.
-* `redYellow.jpg`: A sample input image.
-* `.env`: Environment variables configuration.
-* `.gitignore`: Specifies intentionally untracked files to ignore.
-* `LICENSE`: The MIT License file.
-* `package.json`, `package-lock.json`: Node.js project metadata and dependency lock file.
-* `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`: TypeScript configuration files.
-* `vite.config.ts`: Vite build tool configuration.
-* `eslint.config.js`: ESLint configuration for code linting.
 
 ---
 
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
