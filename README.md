@@ -90,3 +90,31 @@ Individual Python scripts like `testing.py` or `xanax.py` might be runnable dire
 python testing.py
 # or
 python xanax.py
+
+(Refer to the comments or internal documentation within these Python files for specific usage and arguments.)
+
+---
+
+## Project Structure
+
+The key files and directories in this repository are:
+
+* `index.html`: The main entry point for the web application.
+* `src/`: Contains the TypeScript/JavaScript source code for the frontend.
+* `testing.py`: A Python script, likely for testing image processing or recolorization logic.
+* `xanax.py`: Another Python script, possibly containing core image manipulation or algorithm implementations.
+* `output.jpg`: An example output image.
+* `redYellow.jpg`: A sample input image.
+* `.env`: Environment variables configuration.
+* `.gitignore`: Specifies intentionally untracked files to ignore.
+* `LICENSE`: The MIT License file.
+* `package.json`, `package-lock.json`: Node.js project metadata and dependency lock file.
+* `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`: TypeScript configuration files.
+* `vite.config.ts`: Vite build tool configuration.
+* `eslint.config.js`: ESLint configuration for code linting.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
